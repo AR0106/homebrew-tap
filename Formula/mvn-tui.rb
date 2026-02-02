@@ -5,21 +5,21 @@
 class MvnTui < Formula
   desc "Terminal UI for Maven - make common workflows fast and discoverable"
   homepage "https://github.com/AR0106/mvn-tui"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.0/mvn-tui_Darwin_x86_64.tar.gz"
-      sha256 "0a4fe29f80972a8729fdcb03e1d84d61fcbbc872e3b787fa7a4153e7cbefe624"
+      url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.1/mvn-tui_Darwin_x86_64.tar.gz"
+      sha256 "bdba409c76635a041ddb3104d82de07ac61ba1551ff54bf43d8777a395516ae7"
 
       def install
         bin.install "mvn-tui"
       end
     end
     on_arm do
-      url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.0/mvn-tui_Darwin_arm64.tar.gz"
-      sha256 "139add5e08046718c53c890e245c0ea748d4ddcaac12ed37925eb34f6e30aff6"
+      url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.1/mvn-tui_Darwin_arm64.tar.gz"
+      sha256 "9aa7a1cde4a5a1f06b38ebc35d4a0656d2a3a98d0688bd5823009ab2a781441c"
 
       def install
         bin.install "mvn-tui"
@@ -30,8 +30,8 @@ class MvnTui < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.0/mvn-tui_Linux_x86_64.tar.gz"
-        sha256 "d26636c56eb18313dcdcfbe481275df03e97e96a3cf8a3ad04afc75bc161aa65"
+        url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.1/mvn-tui_Linux_x86_64.tar.gz"
+        sha256 "ad0f2f243fc77794740fee859ccfe916cd68ed0a07ea7706f217e2be0433a79f"
 
         def install
           bin.install "mvn-tui"
@@ -40,8 +40,8 @@ class MvnTui < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.0/mvn-tui_Linux_arm64.tar.gz"
-        sha256 "00633a0e305570b705bbb5e1195a98e493367a49f27828c677d01010fba5484f"
+        url "https://github.com/AR0106/mvn-tui/releases/download/v1.1.1/mvn-tui_Linux_arm64.tar.gz"
+        sha256 "75961e0bc94af719379a8a488e54b248034c0625c7b0631de9568cd0f21b46ed"
 
         def install
           bin.install "mvn-tui"
